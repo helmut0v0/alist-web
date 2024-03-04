@@ -1227,7 +1227,7 @@ var hljs = (function () {
       "fieldset",
       "figcaption",
       "figure",
-      "footer",
+      // "footer",
       "form",
       "h1",
       "h2",

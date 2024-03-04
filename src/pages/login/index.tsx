@@ -43,7 +43,8 @@ const Login = () => {
   const logo = useColorModeValue(logos[0], logos.pop())
   const t = useT()
   const title = createMemo(() => {
-    return `${t("login.login_to")} ${getSetting("site_title")}`
+    // return `${t("login.login_to")} ${getSetting("site_title")}`
+    return `${getSetting("site_title")}`
   })
   useTitle(title)
   const bgColor = useColorModeValue("white", "$neutral1")
@@ -220,7 +221,7 @@ const Login = () => {
               }}
             />
           </Show>
-          <Flex
+          {/* <Flex
             px="$1"
             w="$full"
             fontSize="$sm"
@@ -239,7 +240,7 @@ const Login = () => {
             <Text as="a" target="_blank" href={t("login.forget_url")}>
               {t("login.forget")}
             </Text>
-          </Flex>
+          </Flex> */}
         </Show>
         <HStack w="$full" spacing="$2">
           <Show when={!useauthn()}>
