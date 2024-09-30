@@ -9,13 +9,13 @@
     "qrcode_source": "Qrcode source",
     "qrcode_source-tips": "select the QR code device, default linux",
     "qrcode_sources": {
+      "alipaymini": "Alipaymini",
       "android": "Android",
       "ios": "Ios",
-      "linux": "Linux",
-      "mac": "Mac",
+      "qandroid": "Qandroid",
       "tv": "Tv",
       "web": "Web",
-      "windows": "Windows"
+      "wechatmini": "Wechatmini"
     },
     "qrcode_token": "Qrcode token",
     "qrcode_token-tips": "one of QR code token and cookie required",
@@ -31,13 +31,13 @@
     "qrcode_source": "Qrcode source",
     "qrcode_source-tips": "select the QR code device, default linux",
     "qrcode_sources": {
+      "alipaymini": "Alipaymini",
       "android": "Android",
       "ios": "Ios",
-      "linux": "Linux",
-      "mac": "Mac",
+      "qandroid": "Qandroid",
       "tv": "Tv",
       "web": "Web",
-      "windows": "Windows"
+      "wechatmini": "Wechatmini"
     },
     "qrcode_token": "Qrcode token",
     "qrcode_token-tips": "one of QR code token and cookie required",
@@ -48,17 +48,6 @@
     "share_code-tips": "share code of 115 share link"
   },
   "123Pan": {
-    "order_by": "Order by",
-    "order_bys": {
-      "file_name": "File name",
-      "size": "Size",
-      "update_at": "Update at"
-    },
-    "order_direction": "Order direction",
-    "order_directions": {
-      "asc": "Asc",
-      "desc": "Desc"
-    },
     "password": "Password",
     "root_folder_id": "Root folder id",
     "username": "Username"
@@ -72,17 +61,7 @@
     "valid_duration-tips": "minutes"
   },
   "123PanShare": {
-    "order_by": "Order by",
-    "order_bys": {
-      "file_name": "File name",
-      "size": "Size",
-      "update_at": "Update at"
-    },
-    "order_direction": "Order direction",
-    "order_directions": {
-      "asc": "Asc",
-      "desc": "Desc"
-    },
+    "accesstoken": "Accesstoken",
     "root_folder_id": "Root folder id",
     "sharekey": "Sharekey",
     "sharepassword": "Sharepassword"
@@ -107,6 +86,7 @@
   },
   "189CloudPC": {
     "family_id": "Family id",
+    "family_transfer": "Family transfer",
     "no_use_ocr": "No use ocr",
     "order_by": "Order by",
     "order_bys": {
@@ -146,6 +126,7 @@
   },
   "AList V3": {
     "meta_password": "Meta password",
+    "pass_ua_to_upsteam": "Pass ua to upsteam",
     "password": "Password",
     "root_folder_path": "Root folder path",
     "token": "Token",
@@ -153,7 +134,9 @@
     "username": "Username"
   },
   "Alias": {
-    "paths": "Paths"
+    "paths": "Paths",
+    "protect_same_name": "Protect same name",
+    "protect_same_name-tips": "Protects same-name files from Delete or Rename"
   },
   "Aliyundrive": {
     "internal_upload": "Internal upload",
@@ -236,6 +219,8 @@
     "client_id": "Client id",
     "client_secret": "Client secret",
     "custom_crack_ua": "Custom crack ua",
+    "custom_upload_part_size": "Custom upload part size",
+    "custom_upload_part_size-tips": "0 for auto",
     "download_api": "Download api",
     "download_apis": {
       "crack": "Crack",
@@ -327,6 +312,28 @@
     "thumbnail": "Thumbnail",
     "thumbnail-tips": "enable thumbnail which pre-generated under .thumbnails folder"
   },
+  "Doge": {
+    "access_key_id": "Access key id",
+    "add_filename_to_disposition": "Add filename to disposition",
+    "add_filename_to_disposition-tips": "Add filename to Content-Disposition header.",
+    "bucket": "Bucket",
+    "custom_host": "Custom host",
+    "endpoint": "Endpoint",
+    "force_path_style": "Force path style",
+    "list_object_version": "List object version",
+    "list_object_versions": {
+      "v1": "V1",
+      "v2": "V2"
+    },
+    "placeholder": "Placeholder",
+    "region": "Region",
+    "remove_bucket": "Remove bucket",
+    "remove_bucket-tips": "Remove bucket name from path when using custom host.",
+    "root_folder_path": "Root folder path",
+    "secret_access_key": "Secret access key",
+    "session_token": "Session token",
+    "sign_url_expire": "Sign url expire"
+  },
   "Dropbox": {
     "client_id": "Client id",
     "client_id-tips": "Keep it empty if you don't have one",
@@ -338,6 +345,7 @@
   },
   "FTP": {
     "address": "Address",
+    "encoding": "Encoding",
     "password": "Password",
     "root_folder_path": "Root folder path",
     "username": "Username"
@@ -369,6 +377,16 @@
     "root_folder_id": "Root folder id",
     "show_archive": "Show archive"
   },
+  "HalalCloud": {
+    "app_id": "App id",
+    "app_secret": "App secret",
+    "app_version": "App version",
+    "refresh_token": "Refresh token",
+    "refresh_token-tips": "login type is refresh_token,this is required",
+    "root_folder_path": "Root folder path",
+    "upload_thread": "Upload thread",
+    "upload_thread-tips": "1 \u003c= thread \u003c= 32"
+  },
   "ILanZou": {
     "password": "Password",
     "root_folder_id": "Root folder id",
@@ -378,6 +396,12 @@
     "endpoint": "Endpoint",
     "gateway": "Gateway",
     "root_folder_path": "Root folder path"
+  },
+  "KodBox": {
+    "address": "Address",
+    "password": "Password",
+    "root_folder_path": "Root folder path",
+    "username": "Username"
   },
   "Lanzou": {
     "account": "Account",
@@ -397,7 +421,28 @@
       "account": "Account",
       "cookie": "Cookie",
       "url": "Url"
-    }
+    },
+    "user_agent": "User agent"
+  },
+  "Lark": {
+    "app_id": "App id",
+    "app_id-tips": "app id",
+    "app_secret": "App secret",
+    "app_secret-tips": "app secret",
+    "external_mode": "External mode",
+    "external_mode-tips": "external mode",
+    "root_folder_path": "Root folder path",
+    "tenant_url_prefix": "Tenant url prefix",
+    "tenant_url_prefix-tips": "tenant url prefix"
+  },
+  "LenovoNasShare": {
+    "host": "Host",
+    "host-tips": "You can change it to your local area network",
+    "root_folder_path": "Root folder path",
+    "share_id": "Share id",
+    "share_id-tips": "The part after the last / in the shared link",
+    "share_pwd": "Share pwd",
+    "share_pwd-tips": "The password of the shared link"
   },
   "Local": {
     "mkdir_perm": "Mkdir perm",
@@ -407,6 +452,8 @@
     "show_hidden": "Show hidden",
     "show_hidden-tips": "show hidden directories and files",
     "thumb_cache_folder": "Thumb cache folder",
+    "thumb_concurrency": "Thumb concurrency",
+    "thumb_concurrency-tips": "Number of concurrent thumbnail generation goroutines. This controls how many thumbnails can be generated in parallel.",
     "thumbnail": "Thumbnail",
     "thumbnail-tips": "enable thumbnail"
   },
@@ -424,7 +471,11 @@
   },
   "Mega_nz": {
     "email": "Email",
-    "password": "Password"
+    "password": "Password",
+    "two_fa_code": "Two fa code",
+    "two_fa_code-tips": "2FA 6-digit code, filling in the 2FA code alone will not support reloading driver",
+    "two_fa_secret": "Two fa secret",
+    "two_fa_secret-tips": "2FA secret"
   },
   "MoPan": {
     "cloud_id": "Cloud id",
@@ -448,6 +499,11 @@
     "upload_thread": "Upload thread",
     "upload_thread-tips": "1\u003c=thread\u003c=32"
   },
+  "NeteaseMusic": {
+    "cookie": "Cookie",
+    "song_limit": "Song limit",
+    "song_limit-tips": "only get 200 songs by default"
+  },
   "Onedrive": {
     "chunk_size": "Chunk size",
     "client_id": "Client id",
@@ -467,6 +523,11 @@
     "root_folder_path": "Root folder path",
     "site_id": "Site id"
   },
+  "Onedrive Sharelink": {
+    "password": "Password",
+    "root_folder_path": "Root folder path",
+    "url": "Url"
+  },
   "OnedriveAPP": {
     "chunk_size": "Chunk size",
     "client_id": "Client id",
@@ -485,17 +546,41 @@
     "tenant_id": "Tenant id"
   },
   "PikPak": {
+    "captcha_token": "Captcha token",
+    "custom_low_latency_address": "Custom low latency address",
+    "device_id": "Device id",
     "disable_media_link": "Disable media link",
     "password": "Password",
+    "platform": "Platform",
+    "platforms": {
+      "android": "Android",
+      "pc": "Pc",
+      "web": "Web"
+    },
+    "refresh_token": "Refresh token",
+    "refresh_token_method": "Refresh token method",
+    "refresh_token_methods": {
+      "http": "Http",
+      "oauth2": "Oauth2"
+    },
     "root_folder_id": "Root folder id",
+    "use_low_latency_address": "Use low latency address",
     "username": "Username"
   },
   "PikPakShare": {
-    "password": "Password",
+    "custom_low_latency_address": "Custom low latency address",
+    "device_id": "Device id",
+    "platform": "Platform",
+    "platforms": {
+      "android": "Android",
+      "pc": "Pc",
+      "web": "Web"
+    },
     "root_folder_id": "Root folder id",
     "share_id": "Share id",
     "share_pwd": "Share pwd",
-    "username": "Username"
+    "use_low_latency_address": "Use low latency address",
+    "use_transcoding_address": "Use transcoding address"
   },
   "Quark": {
     "cookie": "Cookie",
@@ -511,6 +596,13 @@
       "asc": "Asc",
       "desc": "Desc"
     },
+    "root_folder_id": "Root folder id"
+  },
+  "QuarkTV": {
+    "device_id": "Device id",
+    "query_token": "Query token",
+    "query_token-tips": "don't edit'",
+    "refresh_token": "Refresh token",
     "root_folder_id": "Root folder id"
   },
   "Quqi": {
@@ -547,6 +639,7 @@
   "SFTP": {
     "address": "Address",
     "ignore_symlink_error": "Ignore symlink error",
+    "passphrase": "Passphrase",
     "password": "Password",
     "private_key": "Private key",
     "root_folder_path": "Root folder path",
@@ -563,7 +656,9 @@
     "address": "Address",
     "password": "Password",
     "repoId": "RepoId",
+    "repoPwd": "RepoPwd",
     "root_folder_path": "Root folder path",
+    "token": "Token",
     "username": "Username"
   },
   "Teambition": {
@@ -615,7 +710,102 @@
     "root_folder_id": "Root folder id",
     "username": "Username"
   },
+  "ThunderBrowser": {
+    "captcha_token": "Captcha token",
+    "password": "Password",
+    "remove_way": "Remove way",
+    "remove_ways": {
+      "delete": "Delete",
+      "trash": "Trash"
+    },
+    "root_folder_id": "Root folder id",
+    "safe_password": "Safe password",
+    "use_video_url": "Use video url",
+    "username": "Username"
+  },
+  "ThunderBrowserExpert": {
+    "algorithms": "Algorithms",
+    "algorithms-tips": "sign type is algorithms,this is required",
+    "captcha_sign": "Captcha sign",
+    "captcha_sign-tips": "sign type is captcha_sign,this is required",
+    "captcha_token": "Captcha token",
+    "client_id": "Client id",
+    "client_secret": "Client secret",
+    "client_version": "Client version",
+    "device_id": "Device id",
+    "download_user_agent": "Download user agent",
+    "login_type": "Login type",
+    "login_types": {
+      "refresh_token": "Refresh token",
+      "user": "User"
+    },
+    "package_name": "Package name",
+    "password": "Password",
+    "password-tips": "login type is user,this is required",
+    "refresh_token": "Refresh token",
+    "refresh_token-tips": "login type is refresh_token,this is required",
+    "remove_way": "Remove way",
+    "remove_ways": {
+      "delete": "Delete",
+      "trash": "Trash"
+    },
+    "root_folder_id": "Root folder id",
+    "safe_password": "Safe password",
+    "safe_password-tips": "super safe password",
+    "sign_type": "Sign type",
+    "sign_types": {
+      "algorithms": "Algorithms",
+      "captcha_sign": "Captcha sign"
+    },
+    "timestamp": "Timestamp",
+    "timestamp-tips": "sign type is captcha_sign,this is required",
+    "use_video_url": "Use video url",
+    "user_agent": "User agent",
+    "username": "Username",
+    "username-tips": "login type is user,this is required"
+  },
   "ThunderExpert": {
+    "algorithms": "Algorithms",
+    "algorithms-tips": "sign type is algorithms,this is required",
+    "captcha_sign": "Captcha sign",
+    "captcha_sign-tips": "sign type is captcha_sign,this is required",
+    "captcha_token": "Captcha token",
+    "client_id": "Client id",
+    "client_secret": "Client secret",
+    "client_version": "Client version",
+    "device_id": "Device id",
+    "download_user_agent": "Download user agent",
+    "login_type": "Login type",
+    "login_types": {
+      "refresh_token": "Refresh token",
+      "user": "User"
+    },
+    "package_name": "Package name",
+    "password": "Password",
+    "password-tips": "login type is user,this is required",
+    "refresh_token": "Refresh token",
+    "refresh_token-tips": "login type is refresh_token,this is required",
+    "root_folder_id": "Root folder id",
+    "sign_type": "Sign type",
+    "sign_types": {
+      "algorithms": "Algorithms",
+      "captcha_sign": "Captcha sign"
+    },
+    "timestamp": "Timestamp",
+    "timestamp-tips": "sign type is captcha_sign,this is required",
+    "use_video_url": "Use video url",
+    "user_agent": "User agent",
+    "username": "Username",
+    "username-tips": "login type is user,this is required"
+  },
+  "ThunderX": {
+    "captcha_token": "Captcha token",
+    "password": "Password",
+    "root_folder_id": "Root folder id",
+    "use_video_url": "Use video url",
+    "username": "Username"
+  },
+  "ThunderXExpert": {
     "algorithms": "Algorithms",
     "algorithms-tips": "sign type is algorithms,this is required",
     "captcha_sign": "Captcha sign",
@@ -668,6 +858,13 @@
       "asc": "Asc",
       "desc": "Desc"
     },
+    "root_folder_id": "Root folder id"
+  },
+  "UCTV": {
+    "device_id": "Device id",
+    "query_token": "Query token",
+    "query_token-tips": "don't edit'",
+    "refresh_token": "Refresh token",
     "root_folder_id": "Root folder id"
   },
   "USS": {
@@ -798,25 +995,33 @@
     "ChaoXingGroupDrive": {},
     "Cloudreve": {},
     "Crypt": {},
+    "Doge": {},
     "Dropbox": {},
     "FTP": {},
     "FeijiPan": {},
     "GoogleDrive": {},
     "GooglePhoto": {},
+    "HalalCloud": {},
     "ILanZou": {},
     "IPFS API": {},
+    "KodBox": {},
     "Lanzou": {},
+    "Lark": {},
+    "LenovoNasShare": {},
     "Local": {},
     "MediaTrack": {},
     "Mega_nz": {},
     "MoPan": {
       "alert": "This network disk may store your password in clear text. Please set your password carefully"
     },
+    "NeteaseMusic": {},
     "Onedrive": {},
+    "Onedrive Sharelink": {},
     "OnedriveAPP": {},
     "PikPak": {},
     "PikPakShare": {},
     "Quark": {},
+    "QuarkTV": {},
     "Quqi": {},
     "S3": {},
     "SFTP": {},
@@ -825,9 +1030,14 @@
     "Teambition": {},
     "Terabox": {},
     "Thunder": {},
+    "ThunderBrowser": {},
+    "ThunderBrowserExpert": {},
     "ThunderExpert": {},
+    "ThunderX": {},
+    "ThunderXExpert": {},
     "Trainbit": {},
     "UC": {},
+    "UCTV": {},
     "USS": {},
     "UrlTree": {},
     "VTencent": {},
@@ -858,23 +1068,31 @@
     "ChaoXingGroupDrive": "ChaoXingGroupDrive",
     "Cloudreve": "Cloudreve",
     "Crypt": "Crypt",
+    "Doge": "Doge",
     "Dropbox": "Dropbox",
     "FTP": "FTP",
     "FeijiPan": "FeijiPan",
     "GoogleDrive": "GoogleDrive",
     "GooglePhoto": "GooglePhoto",
+    "HalalCloud": "HalalCloud",
     "ILanZou": "ILanZou",
     "IPFS API": "IPFS API",
+    "KodBox": "KodBox",
     "Lanzou": "Lanzou",
+    "Lark": "Lark",
+    "LenovoNasShare": "LenovoNasShare",
     "Local": "Local",
     "MediaTrack": "MediaTrack",
     "Mega_nz": "Mega nz",
     "MoPan": "MoPan",
+    "NeteaseMusic": "NeteaseMusic",
     "Onedrive": "Onedrive",
+    "Onedrive Sharelink": "Onedrive Sharelink",
     "OnedriveAPP": "OnedriveAPP",
     "PikPak": "PikPak",
     "PikPakShare": "PikPakShare",
     "Quark": "Quark",
+    "QuarkTV": "QuarkTV",
     "Quqi": "Quqi",
     "S3": "S3",
     "SFTP": "SFTP",
@@ -883,9 +1101,14 @@
     "Teambition": "Teambition",
     "Terabox": "Terabox",
     "Thunder": "Thunder",
+    "ThunderBrowser": "ThunderBrowser",
+    "ThunderBrowserExpert": "ThunderBrowserExpert",
     "ThunderExpert": "ThunderExpert",
+    "ThunderX": "ThunderX",
+    "ThunderXExpert": "ThunderXExpert",
     "Trainbit": "Trainbit",
     "UC": "UC",
+    "UCTV": "UCTV",
     "USS": "USS",
     "UrlTree": "UrlTree",
     "VTencent": "VTencent",
